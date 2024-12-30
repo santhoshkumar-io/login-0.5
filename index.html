@@ -2,63 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MakeMeDo Login</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MakeMeDo Login</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/6514f15526.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body class="bg-light  vh-100">
-    <div class="container-fluid h-100 p-0">
-        <div class="d-flex h-100 ">
-            <div class="col-md-2  d-none d-md-block text-white">
-                <nav class="side-bar">
-                </nav>
-            </div>
-            <main class="col-md-10 px-0 d-flex flex-column col-12">
-                <header class="bg-white border-bottom py-3 text-center">
-                    <h2 class="text-center">The Company</h2>
-                </header>
-                <div class="d-md-flex d-block flex-grow-1 align-items-center">
-                    <div class="col-md-6 d-none d-md-block">
-                        <img src="./src/image/login-bg7.png" alt="login-image" class="img-fluid">
-                    </div>
-                    <div class="d-block d-md-none position-absolute w-100 mob-bg" style="top: 10px;">
-                        <img src="./src/image/login-bg3.jpg" alt="login-image" class="img-fluid "
-                            style="height: 100vw; width: 100vw;">
-                    </div>
-                    <div class="  d-md-block align-items-center col-8 mx-auto my-5 my-md-0   justify-content-center "
-                        style="max-width: 400px;min-width: 300px;">
-                        <form id="login-form" class="bg-white shadow-sm p-4 rounded ">
-                            <h1 class=" fs-4 fs-md-6 pt-4">MakeMeDo</h1>
-                            <h3 class="fs-6 fs-md-6">Login to your account</h3>
-                            <div class="form-group my-3">
-                                <label for="uname" class="form-label">Username</label>
-                                <input type="text" id="uname" name="uname" placeholder="Enter your username"
-                                    class="form-control w-100" required>
-                            </div>
-                            <div class="form-group my-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" id="password" name="password" placeholder="Enter your password"
-                                    class="form-control w-100" required>
-                            </div>
-                            <button type="submit" class="btn w-100 my-2 text-white"
-                                style="background-color: #333;">LOGIN</button>
-                            <div id="error"
-                                class="text-danger text-center fs-6 fs-md-2 error-box d-flex align-items-center">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <footer class="footer text-center m-0 align-items-center d-flex justify-content-center">
-                    <p class="mb-0  fs-md-6 " style="font-size: 0.8rem;">Copyright 2024 The Company. All rights
-                        reserved.</p>
-                </footer>
-        </div>
-    </div>
+<body class="bg-light  ">
+  <div class="container-fluid h-100 p-0">
+    <main class=" d-flex vh-100 py-5 justify-content-center mx-auto" style="width: 800px;">
+      <div class=" my-auto" style="width: 450px; height: fit-content;">
+        <h2 class="fs-1 brand">MakeMeDo</h2>
+        <p class="fs-4">MakeMeDo helps you take notes track ideas and get things done easily</p>
+      </div>
+      <div class=" d-flex my-auto" style="width: 350px; ">
+        <form id="login-form" class="bg-white shadow-sm p-4 rounded w-100" style="height : fit-content;
+">
+          <h3 class="fs-4  pt-4">Login to your account</h3>
+          <div class="form-group mt-3 position-relative " style="padding-bottom: 21px;">
+            <label for="uname" class="form-label">Username</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter your username" class="form-control w-100 "
+              required>
 
-    </div>
-    <script type="module" src="./index.js"></script>
+            <div id="uname-err" class="invalid-feedback position-absolute bottom-0 left-0">Required field!</div>
+
+          </div>
+          <div class="form-group mt-1 position-relative" style="padding-bottom: 21px;">
+            <label for=" password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"
+              class="form-control w-100" required>
+            <div id="pass-err" class="invalid-feedback position-absolute bottom-0 left-0">Required field!</div>
+          </div>
+          <button type="submit" class="btn w-100 my-2 text-white" style="background-color: #333;">LOGIN</button>
+          <p class="create-user">Don't have an account? <a class="createu">Create new user</a></p>
+          <div id="error"
+            class="text-danger text-center fs-6 fs-md-2 error-box d-flex align-items-center justify-content-center">
+          </div>
+        </form>
+      </div>
+
+    </main>
+    <footer class="footer px-5">
+      <div class=" mx-auto py-4 d-flex w-100 justify-content-between">
+        <div class="" style="width: 250px;">
+
+          <div>
+            <h2 class="fs-2 text-white">Contact us</h2>
+            <div class="" style="padding: 16px 0px;">
+              <p><i class="fa-solid fa-paper-plane contact-icons"></i>santhoshkumar@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone contact-icons"></i>+91 8754753470</p>
+              <div class="social-icons">
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter-square social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin social-icon"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mb-0  fs-md-6 " style="font-size: 0.8rem;">Copyright 2024 The Company.</p>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="quick-links">
+            <h2 class="fs-2 text-white">Quick Links</h2>
+            <div class="d-flex flex-column" style="padding: 16px 0px;">
+              <a>Services</a>
+              <a>About us</a>
+              <a>Privacy Policies</a>
+              <a>Terms and Conditions</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="" style="width: 250px;">
+          <h2 class="fs-2 text-white">Our Mission</h2>
+          <p>We help you save your time and invest it wisely.</p>
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-center pb-3 pt-1">
+
+        <a class="lang-wrap">English(US)</a>
+        <a class="lang-wrap mx-3">English(UK)</a>
+      </div>
+    </footer>
+  </div>
+
+  </div>
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>
