@@ -1,0 +1,24 @@
+.login-image {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .w-max {
+    width: max-content !important;
+  }
+  .footer {
+    background-color: #222;
+    color: white;
+    height: 40px;
+  }
+  
+  .header {
+    height: 50px;
+  }
+  
+  .error-box {
+    height: 40px;
+  }
+  .mob-bg{
+      z-index: -100;
+  }
